@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="KovaStudio-LootingZs" />
+		<Description value="7D2D Alpha 19 - Allows zombie corpses to looting." />
+		<Author value="methanic" />
+		<Version value="1.0" />
+
+	</ModInfo>
+</xml>

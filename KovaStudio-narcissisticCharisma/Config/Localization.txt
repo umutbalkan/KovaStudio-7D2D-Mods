@@ -1,0 +1,7 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+perkCharismaticNatureDesc,progression,perk Int,,,"You are an inspiration to your allies, increasing their combat prowess. You get the same benefits while under the adrenaline of combat."
+perkCharismaticNatureRank1LongDesc,progression,perk Int,,,People get inspired when you are near them. Nearby Allies gain 20 health and stamina when near you. You get self inspired when in battle.
+perkCharismaticNatureRank2LongDesc,progression,perk Int,,,You are a team leader and inspire those around you. Block and Melee Damage are increased by 20% for nearby allies. You get self inspired when in battle.
+perkCharismaticNatureRank3LongDesc,progression,perk Int,,,"You are a strong motivational force. Nearby allies take 10% less damage from all sources, take half damage from bleeding and stop bleeding twice as fast. The addrenaline rush of battle also makes you more resilient."
+perkCharismaticNatureRank4LongDesc,progression,perk Int,,,Your leadership abilities are top shelf. Allies are so enamored with you they get +1 to all attributes when near you. You get +1 to all attributes during combat.
+

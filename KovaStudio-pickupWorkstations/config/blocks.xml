@@ -1,0 +1,36 @@
+<configs>
+
+<remove xpath="/blocks/block[@name='chemistryStation']/drop"/>
+<remove xpath="/blocks/block[@name='forge']/drop"/>
+<remove xpath="/blocks/block[@name='workbench']/drop"/>
+<remove xpath="/blocks/block[@name='cementMixer']/drop"/>
+
+<append xpath="/blocks/block[@name='chemistryStation']">
+<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="chemistryStation" count="1" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+</append>
+
+<append xpath="/blocks/block[@name='forge']">
+<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="forge" count="1" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+</append>
+
+<append xpath="/blocks/block[@name='workbench']">
+<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="workbench" count="1" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+</append>
+
+<append xpath="/blocks/block[@name='cementMixer']">
+<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+<drop event="Destroy" name="cementMixer" count="1" tool_category="Disassemble" />
+<drop event="Destroy" count="0"/>
+<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+</append>
+	
+</configs>

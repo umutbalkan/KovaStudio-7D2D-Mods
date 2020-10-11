@@ -1,0 +1,325 @@
+<configs>
+<append xpath="/lootcontainers">	
+
+<lootgroup name="T1stuff">	
+	<item name="armorClothPants"/>
+	<item name="armorClothJacket"/>
+	<item name="armorClothBoots"/>
+	<item name="armorClothGloves"/>
+	<item name="armorClothHat"/>
+	
+	<item name="armorScrapHelmet"/>
+	<item name="armorScrapChest"/>
+	<item name="armorScrapGloves"/>
+	<item name="armorScrapLegs"/>
+	<item name="armorScrapBoots"/>
+	
+	<item name="modMeleeGraveDigger"/>
+	<item name="modMeleeSerratedBlade"/>
+	<item name="modMeleeStructuralBrace"/>
+	<item name="modMeleeWeightedHead"/>
+	<item name="modMeleeWoodSplitter"/>
+	<item name="modFuelTankSmall"/>
+	
+	<item name="modGunBipod"/>
+	<item name="modGunChoke"/>
+	<item name="modGunDuckbill"/>
+	<item name="modGunFlashlight"/>
+	<item name="modGunForegrip"/>
+	<item name="modGunMagazineExtender"/>
+	<item name="modGunMeleeTheHunter"/>
+	<item name="modGunMuzzleBrake"/>
+	<item name="modGunScopeSmall"/>
+	<item name="modGunTriggerGroupSemi"/>
+	<item name="modShotgunSawedOffBarrel"/>
+	
+	<item name="modArmorHelmetLight"/>
+	<item name="modArmorInsulatedLiner"/>
+	<item name="modArmorCoolingMesh"/>
+	<item name="modArmorPlatingBasic"/>
+	<item name="modArmorStoragePocket"/>
+	<item name="modArmorImprovedFittings"/>
+</lootgroup>
+
+<lootgroup name="T2stuff">	
+	<item name="armorLeatherBoots"/>
+	<item name="armorLeatherPants"/>
+	<item name="armorLeatherChest"/>
+	<item name="armorLeatherGloves"/>
+	<item name="armorLeatherHood"/>
+	
+	<item name="armorIronGloves"/>
+	<item name="armorIronHelmet"/>
+	<item name="armorIronBoots"/>
+	<item name="armorIronLegs"/>
+	<item name="armorIronChest"/>
+	
+	<item name="modMeleeClubBurningShaft"/>
+	<item name="modMeleeClubBarbedWire"/>
+	<item name="modMeleeFortifyingGrip"/>
+	<item name="modMeleeBunkerBuster"/>
+	<item name="modFuelTankLarge"/>
+	
+	<item name="modGunBarrelExtender"/>
+	<item name="modGunCrippleEm"/>
+	<item name="modGunBowArrowRest"/>
+	<item name="modGunLaserSight"/>
+	<item name="modGunReflexSight"/>
+	<item name="modGunRetractingStock"/>
+	<item name="modGunScopeMedium"/>
+	<item name="modGunSoundSuppressorSilencer"/>
+	<item name="modGunTriggerGroupBurst3"/>
+	<item name="modGunShotgunTubeExtenderMagazine"/>
+	
+	<item name="modArmorWaterPurifier"/>
+	<item name="modArmorImpactBracing"/>
+	<item name="modArmorPlatingReinforced"/>
+	<item name="modArmorMuffledConnectors"/>
+	<item name="modArmorDoubleStoragePocket"/>
+	<item name="modArmorCustomizedFittings"/>
+</lootgroup>
+
+<lootgroup name="T3stuff">	
+	<item name="armorMilitaryGloves"/>
+	<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2"/>
+	<item name="armorMilitaryBoots"/>
+	<item name="armorMilitaryLegs"/>
+	<item name="armorMilitaryVest"/>
+	<item name="armorMilitarySetParts" count="1,6"/>
+	
+	<item name="armorSteelBoots"/>
+	<item name="armorSteelLegs"/>
+	<item name="armorSteelChest"/>
+	<item name="armorSteelGloves"/>
+	<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2"/>
+	<item name="armorSteelSetParts" count="1,6"/>
+	
+	<item name="modMeleeClubMetalSpikes"/>
+	<item name="modMeleeClubMetalChain"/>
+	<item name="modMeleeErgonomicGrip"/>
+	<item name="modMeleeTemperedBlade"/>
+	<item name="modMeleeIronBreaker"/>
+	
+	<item name="modGunBowPolymerString"/>
+	<item name="modGunScopeLarge"/>
+	<item name="modGunTriggerGroupAutomatic"/>
+	<item name="modGunDrumMagazineExtender" prob=".3"/>
+	
+	<item name="modArmorBandolier"/>
+	<item name="modArmorTripleStoragePocket"/>
+	<item name="modArmorAdvancedMuffledConnectors"/>
+</lootgroup>
+
+<lootgroup name="lumberjacks" count="1">
+	<item name="meleeToolAxeT2SteelAxe"/>
+	<item name="meleeToolAxeT1IronFireaxe" prob="2"/>
+	<item name="drinkJarGrainAlcohol"/>
+	<item name="resourceForgedIron" count="1,4" prob="0.01272"/> <!-- together 0.5% -->
+	<item name="resourceForgedSteel" count="1,4" prob="0.00848"/>
+	<item name="gunBowT3CompoundBow" prob="0.03"/>
+	<item name="gunRifleT1HuntingRifleParts" prob="0.01"/>
+	<item name="gunRifleT2MarksmanRifle" prob="0.01"/>
+</lootgroup>
+
+<!-- ZombieSoldier loot -->
+<lootcontainer id="1000" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="junk" prob="2.5"/>
+	<item group="T1stuff" prob=".7"/>
+	<item group="T2stuff" prob="0.2"/>
+	<item group="T3stuff" prob="0.06"/>
+	<item group="weaponParts" prob="0.12"/>
+</lootcontainer>
+
+<!-- ZombieCheerleader -->		
+<lootcontainer id="1001" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="junk" prob="1"/>
+	<item group="groupApparelTankTopTShirt" prob="1.5"/>
+	<item group="groupApparelPants" count="1" prob="0.2"/>
+	<item name="apparelRunningShoesHP" prob="1.5"/>
+	<item group="groupQuestChallenge" count="1" prob="0.036"/>
+	<item group="groupTreasureMaps" count="1" prob="0.031"/>
+</lootcontainer>
+
+<!-- zombie nurse, medical supplies -->
+<lootcontainer id="1002" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="junk" prob="1.5"/>
+	<item group="medicine"/>
+	<item name="oldCash" count="1,20" prob="0.5"/>
+</lootcontainer>	
+
+<!-- fatHawaiianZombie, fat zombie -->
+<lootcontainer id="1003" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="junk" prob="4"/>
+	<item group="rottenFood" prob="4"/>
+	<item name="drinkJarBoiledWater" count="1,2" prob="1.5"/>
+	<item name="foodShamSandwich" prob="5"/>
+	<item group="cannedfood" prob="5"/>
+	<item name="drugPainkillers" prob="1"/>
+	<item group="groupAmmoRegularGunslingerT1" prob="1"/>
+</lootcontainer>
+	
+<!-- feral zombie loot -->
+<lootcontainer id="1004" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="junk" prob="1"/>
+	<item name="resourceBone" count="1,4" prob="1"/>
+	<item group="T2stuff" prob="0.2"/>
+	<item group="T1stuff" prob="0.9"/>
+	<item group="T3stuff" prob="0.07"/>
+	<item group="modArmorT3" prob="0.2"/>	
+</lootcontainer>	
+
+<!-- zombieMaleHazmat -->
+<lootcontainer id="1005" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+<item group="junk" prob="3.7"/>
+	<item group="groupApparelHazmat" count="1"/>
+	<item group="rareMedicine" prob="0.2"/>
+	<item name="drinkJarGrainAlcohol" count="1,4" prob="0.2"/>
+	<item name="resourceScrapPolymers" count="1,5" prob="0.3"/>
+	<item name="resourcePaper" count="1,6" prob="0.3"/>
+	<item name="resourceCloth" count="1,4" prob="0.3"/>
+	<item name="resourceDuctTape" count="1,3" prob="0.25"/>
+	<item group="perkBooks"/>
+	<item group="groupQuestChallenge" count="1" prob="0.09"/>
+	<item group="groupTreasureMaps" count="1" prob="0.092"/>
+</lootcontainer>
+
+<!-- snowzombie, lumberjack zombie loot-->
+<lootcontainer id="1006" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+<item group="junk" prob="1"/>
+	<item group="lumberjacks" prob="0.42"/>
+	<item group="warmClothes" prob="1"/>
+	<item group="groupApparelHazmat" count="1" prob="0.01"/>
+	<item group="rareOres" prob="0.02"/>	
+</lootcontainer>
+	
+<!-- zombie utility worker / construction worker loot -->
+<lootcontainer id="1007" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="junk" prob="1.5"/>
+	<item group="schematicsToolsT2" prob=".4"/>
+	<item group="schematicsToolsRare" prob="0.05"/>	
+</lootcontainer>
+	
+<!-- ZombieFootballPlayer -->
+<lootcontainer id="1008" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="junk" prob="1.5"/>
+	<!-- <item group="armorFootballHelmet" /> -->	
+</lootcontainer>
+
+<!-- ZombieSkateboarder -->
+<lootcontainer id="1009" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+<item group="junk" prob="2"/>
+	<item name="apparelHoodySweatshirt" prob="1"/>
+	<item name="apparelDenimPants" prob="1"/>
+	<item name="apparelRunningShoesRegular" prob="1"/>
+	<item name="resourceMechanicalParts" count="1,3" prob="1.5"/>
+	<item group="groupQuestChallenge" count="1" prob="0.036"/>
+	<item group="groupTreasureMaps" count="1" prob="0.031"/>	
+</lootcontainer>
+
+<!-- zombieOldTimer / zombieCowboy -->
+<lootcontainer id="1010" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+<item group="junk" prob="10"/>
+	<item name="gunRifleT1HuntingRifleParts" prob="1.2"/>
+	<item group="groupWeaponsT2_DeadEye" prob="3"/>
+	<item name="thrownDynamite" count="1,3" prob="1"/>
+	<item name="apparelCowboyHat" prob="1"/>
+	<item name="apparelBandana" prob="1"/>
+	<item name="apparelCoatLeatherPoncho" prob="1"/>
+	<item name="apparelDenimPants" prob="1"/>
+	<item name="apparelCowboyBoots" prob="1"/>
+	<item name="apparelCigar" prob="1"/>
+	<item group="rareOres" prob="1"/>
+	<item name="drinkJarGrainAlcohol" count="1,3" prob="0.7"/>
+	<item group="cannedfood" count="1,2" prob="1"/>
+	<item name="drinkJarBoiledWater" count="1,3" prob="1"/>
+	<item name="oldCash" count="2,15" prob="1"/>
+	<item group="groupTreasureMaps" count="1" prob="1"/>	
+</lootcontainer>
+
+<!-- ZombieBiker -->
+<lootcontainer id="1011" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+<item group="junk" prob="2"/>
+	<item name="armorMilitaryHelmet"/>
+	<item name="apparelGothPants"/>
+	<item name="apparelGothBoots"/>
+	<item name="apparelShades" prob="0.1"/>
+	<item name="drinkJarBeer" prob="3"/>
+	<item name="drinkJarGrainAlcohol"/>
+	<item name="oldCash" count="1,15"/>
+	<item name="casinoCoin" count="1,10"/>
+	<item name="drugAntibiotics"/>
+	<item name="drugPainkillers"/>
+	<item group="modGunT1" prob="0.2"/>
+	<item name="gunHandgunT1Pistol" prob="0.3"/>
+	<item name="gunShotgunT1DoubleBarrelParts" prob="0.3"/>
+	<item group="groupToolsT1" prob="0.1"/>
+	<item name="meleeWpnClubT0WoodenClub" prob="0.6"/>
+	<item name="meleeWpnClubT3SteelClub" prob="0.5"/>
+	<item name="meleeWpnBladeT1HuntingKnife"/>
+	<item name="meleeWpnBladeT3Machete" prob="0.8"/>
+	<item name="medicalFirstAidKit"/>
+	<item name="vehicleWheels" prob="0.4"/>
+	<item name="vehicleMinibikeChassis" prob="0.4"/>
+	<item name="vehicleMinibikeHandlebars" prob="0.4"/>
+	<item name="smallEngine" prob="0.3"/>	
+</lootcontainer>
+
+<!-- ZombieStripper -->
+<lootcontainer id="1012" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+<item group="junk" prob="2"/>
+	<item name="oldCash" count="4,45" prob="2"/>
+	<item name="casinoCoin" count="10,30"/>
+	<item name="resourceScrapPolymers" count="2" prob="0.3"/>
+	<item name="medicalBloodBag" prob="0.3"/>
+	<item name="drugPainkillers"/>
+	<item name="drugVitamins"/>
+	<item name="drugAntibiotics" prob="0.5"/>
+	<item name="resourceFeather" count="5,25"/>	
+</lootcontainer>
+	
+<!-- ZombieFarmer -->
+<lootcontainer id="1013" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="junk" prob="2"/>
+	<item group="groupToolsT1" prob="1"/>
+	<item group="farmCrops" prob="1"/>
+	<item group="seeds" prob="1"/>
+	<item name="meleeToolShovelT1IronShovel" prob="1"/>
+	<item name="meleeToolShovelT2SteelShovel" prob="0.5"/>
+	<item name="drinkJarBeer" prob="1"/>
+	<item name="gunBowT1WoodenBow" prob="0.02"/>
+	<item name="gunBowT3CompoundBow" prob="0.04"/>
+</lootcontainer>
+
+<!-- zombieBusinessMan -->
+<lootcontainer id="1014" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+<item group="junk" prob="4"/>
+	<item group="groupApparelSuit" prob="2"/>
+	<item name="oldCash" count="14,360" prob="2"/>
+	<item name="resourcePaper" count="10,25" prob="0.66"/>
+	<item group="groupQuestChallenge" count="1" prob="0.036"/>
+	<item group="groupTreasureMaps" count="1" prob="0.031"/>	
+</lootcontainer>
+
+<!-- zombie cop-->
+<lootcontainer id="1015" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="junk" prob="3"/>
+	<item group="rottenFood" prob="1"/>
+	<item name="gunHandgunT1Pistol" prob="1.1"/>
+	<item name="gunShotgunT1DoubleBarrel" prob="1.1"/>
+	<item group="groupQuestAmmo"/>
+	<item group="modGunT2" prob="0.5"/>
+	<item name="armorMilitaryVest" prob="0.2"/>
+	<item name="resourceMilitaryFiber" count="1,4" prob="0.04"/>	
+</lootcontainer>
+
+<lootcontainer id="1016" count="0,2" size="6,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="qualBaseTemplate">
+	<item group="junk" prob="10"/>
+	<item group="groupApparelPants" prob="1.9"/>
+	<item group="groupApparelShirtLong" prob="1.9"/>
+	<item group="rottenFood" prob="0.62"/>
+	<item group="groupApparelHazmat" count="1" prob="0.08"/>
+	<item group="groupQuestChallenge" count="1" prob="0.191"/>
+	<item group="groupTreasureMaps" count="1" prob="0.161"/> <!-- total 2% for a quest thing -->
+</lootcontainer>
+</append>
+</configs>

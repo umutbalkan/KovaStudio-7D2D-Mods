@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="KovaStudio-pickupWorkstations" />
+		<Description value="7D2D Alpha 19 - Pick up workstations with a harvesting tool (wrench etc.)" />
+		<Author value="methanic" />
+		<Version value="1.0" />
+
+	</ModInfo>
+</xml>

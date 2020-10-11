@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/progression/perks/perk[@name='perkCharismaticNature']/effect_group" >
+			<triggered_effect trigger="onCombatEntered" action="AddBuff" buff="buffPerkCharismaticNature" >
+				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="GTE" value="1" />
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNatureLevel" operation="set" value="1" >
+				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="Equals" value="1" />
+				<requirement name="CVarCompare" cvar="CharismaticNatureLevel" target="other" operation="LT" value="1" />				
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNatureLevel" operation="set" value="2" >
+				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="Equals" value="2" />
+				<requirement name="CVarCompare" cvar="CharismaticNatureLevel" target="other" operation="LT" value="2" />				
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNatureLevel" operation="set" value="3" >
+				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="Equals" value="3" />
+				<requirement name="CVarCompare" cvar="CharismaticNatureLevel" target="other" operation="LT" value="3" />				
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNatureLevel" operation="set" value="4" >
+				<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="Equals" value="4" />
+				<requirement name="CVarCompare" cvar="CharismaticNatureLevel" target="other" operation="LT" value="4" />				
+			</triggered_effect>
+	</append>
+</configs>
